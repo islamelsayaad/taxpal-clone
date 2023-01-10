@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html class="h-full bg-white scroll-smooth antialiased" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lexend:wght@300;400;500&display=swap");
+    </style>
+    <link rel="stylesheet" href="main.css" />
+    <script defer src="app.js"></script>
+    <title>TaxPal - Accounting made simple for small businesses</title>
+    <meta
+      name="description"
+      content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <nav class="py-8 px-7 md:px-10">
+      <div class="c-flex-items-center justify-between w-full">
+        <div class="c-flex-items-center gap-x-14 lg:gap-x-16">
+          <a href="#">
+            <svg
+              width="109"
+              height="40"
+              viewBox="0 0 109 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 20C0 31.046 8.954 40 20 40C31.046 40 40 31.046 40 20C40 8.954 31.046 0 20 0C8.954 0 0 8.954 0 20ZM20 36C12.736 36 6.679 30.837 5.296 23.98C4.97 22.358 6.343 21 8 21H32C33.657 21 35.031 22.357 34.704 23.98C33.32 30.838 27.264 36 20 36Z"
+                fill="#2563EB"
+              />
+              <path
+                d="M55.528 26.5697V15.8417H52V13.9697H61.108V15.8417H57.472V26.5697H55.528Z"
+                fill="#0F172A"
+              />
+              <path
+                d="M83.084 26.57V13.97H88.43C89.174 13.97 89.846 14.15 90.446 14.51C91.0489 14.8489 91.547 15.3471 91.886 15.95C92.246 16.562 92.426 17.252 92.426 18.02C92.426 18.8 92.246 19.502 91.886 20.126C91.5458 20.742 91.049 21.2573 90.446 21.62C89.846 21.98 89.174 22.16 88.43 22.16H85.784V26.57H83.084V26.57ZM85.748 19.73H88.124C88.412 19.73 88.67 19.658 88.898 19.514C89.126 19.358 89.306 19.154 89.438 18.902C89.585 18.6381 89.6596 18.34 89.654 18.038C89.654 17.714 89.582 17.432 89.438 17.192C89.3173 16.952 89.1297 16.7519 88.898 16.616C88.6662 16.4709 88.3974 16.3959 88.124 16.4H85.748V19.73V19.73ZM106.227 26.57V13.25H108.783V26.57H106.227Z"
+                fill="#2563EB"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M95.9059 26.1019C96.5419 26.5339 97.2559 26.7499 98.0479 26.7499C98.4919 26.7499 98.9119 26.6839 99.3079 26.5519C99.6865 26.4171 100.044 26.2292 100.37 25.9939C100.632 25.8023 100.868 25.5778 101.072 25.3259V26.5699H103.646V17.0479H101.108V18.2959C100.922 18.0444 100.704 17.8185 100.46 17.6239C100.156 17.3752 99.8079 17.1859 99.4339 17.0659C99.0244 16.9175 98.5915 16.8443 98.1559 16.8499C97.3279 16.8499 96.5899 17.0659 95.9419 17.4979C95.2939 17.9179 94.7779 18.4999 94.3939 19.2439C94.0219 19.9759 93.8359 20.8219 93.8359 21.7819C93.8359 22.7419 94.0219 23.5939 94.3939 24.3379C94.7659 25.0819 95.2699 25.6699 95.9059 26.1019ZM100.01 24.1939C99.6499 24.4219 99.2299 24.5359 98.7499 24.5359C98.2819 24.5359 97.8679 24.4219 97.5079 24.1939C97.1513 23.956 96.8653 23.6265 96.6799 23.2399C96.4759 22.8199 96.3739 22.3339 96.3739 21.7819C96.3739 21.2419 96.4759 20.7679 96.6799 20.3599C96.8839 19.9519 97.1599 19.6339 97.5079 19.4059C97.8679 19.1659 98.2819 19.0459 98.7499 19.0459C99.2299 19.0459 99.6499 19.1659 100.01 19.4059C100.37 19.6339 100.646 19.9519 100.838 20.3599C101.042 20.7679 101.144 21.2419 101.144 21.7819C101.144 22.3339 101.042 22.8199 100.838 23.2399C100.66 23.6314 100.373 23.9629 100.01 24.1939V24.1939Z"
+                fill="#2563EB"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M76.3221 23.1971L78.9171 26.5701H81.1851L77.5231 21.7831L80.8611 17.1201H78.6651L76.5031 20.4541L73.9491 17.1201H71.6091L75.2611 21.8301L71.6271 26.5701H73.8231L76.3231 23.1971H76.3221ZM62.7381 26.1021C63.3703 26.5294 64.117 26.7553 64.8801 26.7501C65.3361 26.7501 65.7681 26.6781 66.1761 26.5341C66.5961 26.3901 66.9741 26.1981 67.3101 25.9581C67.6451 25.733 67.9376 25.4503 68.1741 25.1231V26.5701H70.0461V17.1201H68.1741V18.5701C67.9842 18.2566 67.7404 17.979 67.4541 17.7501C67.1428 17.4796 66.7822 17.2718 66.3921 17.1381C65.9577 16.9898 65.5011 16.9168 65.0421 16.9221C64.2141 16.9221 63.4641 17.1321 62.7921 17.5521C62.1321 17.9721 61.6041 18.5541 61.2081 19.2981C60.8241 20.0301 60.6321 20.8701 60.6321 21.8181C60.6321 22.7541 60.8241 23.5941 61.2081 24.3381C61.5921 25.0821 62.1021 25.6701 62.7381 26.1021V26.1021ZM66.8601 24.6261C66.4281 24.9021 65.9301 25.0401 65.3661 25.0401C64.8443 25.0487 64.3313 24.9048 63.8901 24.6261C63.4621 24.3412 63.1149 23.9506 62.8821 23.4921C62.6421 23.0001 62.5221 22.4421 62.5221 21.8181C62.5221 21.2061 62.6421 20.6601 62.8821 20.1801C63.1341 19.7001 63.4701 19.3221 63.8901 19.0461C64.3313 18.7675 64.8443 18.6236 65.3661 18.6321C65.9301 18.6321 66.4281 18.7701 66.8601 19.0461C67.2921 19.3221 67.6281 19.7001 67.8681 20.1801C68.1201 20.6601 68.2461 21.2061 68.2461 21.8181C68.2461 22.4421 68.1201 23.0001 67.8681 23.4921C67.6281 23.9721 67.2921 24.3501 66.8601 24.6261V24.6261Z"
+                fill="#0F172A"
+              />
+            </svg>
+          </a>
+          <div class="hidden md:block">
+            <ul class="c-flex-items-center list-none gap-x-8 lg:gap-x-10">
+              <li>
+                <a class="c-button--hover" href="#primary-features__section"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a class="c-button--hover" href="#testmonials__section"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a class="c-button--hover" href="#pricing__section">Pricing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="c-flex-items-center justify-between gap-x-8 lg:gap-x-10">
+          <a href="login.html" class="c-button--hover hidden sm:block"
+            >Sign in</a
+          >
+          <a
+            href="sign-up.html"
+            class="c-button font-medium text-slate-50 bg-blue-600 hover:bg-blue-500 active:bg-blue-800"
+          >
+            Get started
+          </a>
+        </div>
+      </div>
+    </nav>
+    <header class="w-full py-24 md:pt-28">
+      <div class="c-section__header">
+        <h1>
+          Accounting
+          <span class="relative"
+            ><span class="relative z-20 text-blue-600 whitespace-nowrap"
+              >made simple</span
+            >
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 418 42"
+              class="absolute top-2/3 left-0 h-[0.58em] w-full fill-blue-300/70 z-10"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z"
+              ></path>
+            </svg>
+          </span>
+          for small businesses.
+        </h1>
+        <p>
+          Most bookkeeping software is accurate, but hard to use. We make the
+          opposite trade-off, and hope you don’t get audited.
+        </p>
+      </div>
+
+      <div class="c-flex-center flex-nowrap gap-y-5 gap-x-4 sm:gap-x-8">
+        <a
+          href="sign-up.html"
+          class="c-button bg-slate-900 text-white font-medium"
+          >Get 6 months free</a
+        >
+        <a
+          class="c-button border border-slate-300 hover:border-slate-400 active:bg-slate-50 gap-x-3 text-black"
+          href="https://www.youtube.com/watch?v=JRn8Xc41nUI"
+          target="_blank"
+        >
+          <span
+            ><svg
+              width="10"
+              height="11"
+              viewBox="0 0 10 11"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.10986 0.30826C2.80867 0.124058 2.45858 0.0182617 2.09694 0.00215928C1.7353 -0.0139432 1.37567 0.0602513 1.05642 0.216828C0.737176 0.373405 0.47029 0.606489 0.284238 0.891214C0.0981847 1.17594 -5.41651e-05 1.50162 2.24048e-08 1.83352V9.16648C-5.41651e-05 9.49838 0.0981847 9.82406 0.284238 10.1088C0.47029 10.3935 0.737176 10.6266 1.05642 10.7832C1.37567 10.9397 1.7353 11.0139 2.09694 10.9978C2.45858 10.9817 2.80867 10.8759 3.10986 10.6917L9.10959 7.02526C9.3835 6.85784 9.60808 6.63103 9.7634 6.36496C9.91873 6.09888 10 5.80177 10 5.5C10 5.19823 9.91873 4.90112 9.7634 4.63504C9.60808 4.36897 9.3835 4.14216 9.10959 3.97474L3.10986 0.30826Z"
+                fill="#2563EB"
+              />
+            </svg>
+          </span>
+          Watch video</a
+        >
+      </div>
+      <div class="w-full mt-28 md:mt-32">
+        <div class="c-flex-center flex-col gap-14">
+          <h3
+            class="text-xl font-display font-medium leading-none text-slate-700 text-center tracking-tight md:text-2xl"
+          >
+            Trusted by
+          </h3>
+          <div class="w-full">
+            <ul
+              class="grid grid-cols-2 grid-flow-row justify-items-center gap-10 w-full h-fit list-none flex-wrap sm:flex sm:items-center sm:justify-center lg:gap-x-16"
+            >
+              <li>
+                <img src="assets/header/1.svg" alt="" />
+              </li>
+              <li>
+                <img src="assets/header/2.svg" alt="" />
+              </li>
+              <li>
+                <img src="assets/header/3.svg" alt="" />
+              </li>
+              <li>
+                <img src="assets/header/4.svg" alt="" />
+              </li>
+              <li>
+                <img src="assets/header/5.svg" alt="" />
+              </li>
+              <li>
+                <img src="assets/header/6.svg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="primary-features__section" class="bg-blue-600">
+        <img
+          src="assets/primary features/background-features.5f7a9ac9.jpg"
+          class="absolute top-1/2 left-1/2 max-w-none translate-x-[-44%] translate-y-[-42%] z-0"
+          width="2245"
+          height="1636"
+        />
+        <div
+          class="c-flex-center flex-col w-full max-w-7xl mx-auto relative z-10"
+        >
+          <div class="c-section__header">
+            <h1 class="text-white">Everything you need to run your books.</h1>
+            <p class="text-slate-100">
+              Well everything you need if you aren’t that picky about minor
+              details like tax compliance.
+            </p>
+          </div>
+          <div
+            class="c-flex-justify-center flex-col w-screen sm:w-full lg:grid lg:grid-cols-12"
+          >
+            <div class="relative w-full lg:col-span-5">
+              <div
+                class="c-primary-features__section__tabs w-full left-0 top-[5.25rem] flex lg:absolute lg:flex-col"
+              >
+                <div
+                  class="c-primary-features__section__tab-wrapper c-active"
+                  data-index="0"
+                >
+                  <h3>Payroll</h3>
+                  <p>
+                    Keep track of everyone's salaries and whether or not they've
+                    been paid. Direct deposit not supported.
+                  </p>
+                </div>
+                <div
+                  class="c-primary-features__section__tab-wrapper"
+                  data-index="1"
+                >
+                  <h3>Claim expenses</h3>
+                  <p>
+                    All of your receipts organized into one place, as long as
+                    you don't mind typing in the data by hand.
+                  </p>
+                </div>
+                <div
+                  class="c-primary-features__section__tab-wrapper"
+                  data-index="2"
+                >
+                  <h3>VAT handling</h3>
+                  <p>
+                    We only sell our software to companies who don't deal with
+                    VAT at all, so technically we do all the VAT stuff they
+                    need.
+                  </p>
+                </div>
+                <div
+                  class="c-primary-features__section__tab-wrapper"
+                  data-index="3"
+                >
+                  <h3>Reporting</h3>
+                  <p>
+                    Easily export your data into an Excel spreadsheet where you
+                    can do whatever the hell you want with it
+                  </p>
+                </div>
+              </div>
+              <div
+                class="c-primary-features__section__list-items w-full relative px-8 pb-14 pt-4 z-10 sm:pt-12 sm:px-6 lg:hidden"
+              >
+                <div
+                  class="absolute z-[1] left-0 top-0 w-screen h-[64rem] bg-white/10 ring-1 ring-inset ring-white/10 inset-x-0 rounded-t-xl sm:left-0 sm:w-full sm:top-[0.75rem] sm:h-full"
+                ></div>
+
+                <div class="c-flex-center flex-col gap-y-10 relative z-10">
+                  <ul
+                    class="c-flex-items-center justify-start flex-nowrap gap-x-4 w-full py-4 overflow-x-auto sm:justify-center sm:py-0"
+                  >
+                    <li class="c-active" data-index="0">Payroll</li>
+                    <li data-index="1">Claim expenses</li>
+                    <li data-index="2">VAT handling</li>
+                    <li data-index="3">Reporting</li>
+                  </ul>
+                  <div class="-mt-[2.25rem] sm:-mt-[1.5rem]">
+                    <p
+                      class="text-[1.065rem] text-start leading-relaxed mt-4 tracking-tight text-slate-100 max-w-max sm:max-w-lg sm:text-center"
+                    >
+                      Keep track of everyone's salaries and whether or not
+                      they've been paid. Direct deposit not supported.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="c-primary-features__section__img__wrapper relative left-14 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 -mt-[1rem] sm:w-fit sm:left-0 md:mt-0 lg:col-span-7 lg:w-[67.8125rem]"
+            >
+              <img src="assets/primary features/payroll.webp" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="secondary-features__section" class="bg-white">
+        <div class="c-section__header">
+          <h1 class="text-slate-900">Simplify everyday business tasks.</h1>
+          <p class="text-slate-600">
+            Because you’d probably be a little confused if we suggested you
+            complicate your everyday business tasks instead.
+          </p>
+        </div>
+        <div class="c-flex-items-center flex-col w-full">
+          <div class="w-full xl:max-w-7xl">
+            <div
+              class="c-secondary-features__section__tabs grid items-baseline justify-center grid-flow-row gap-x-14 gap-y-16 lg:grid-rows-1 lg:grid-cols-3"
+            >
+              <div
+                class="c-secondary-features__section__tab__wrapper c-active"
+                data-position="0"
+              >
+                <span>
+                  <svg aria-hidden="true" class="h-9 w-9" fill="none">
+                    <defs>
+                      <linearGradient
+                        id=":Rardm:"
+                        x1="11.5"
+                        y1="18"
+                        x2="36"
+                        y2="15.5"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset=".194" stop-color="#fff"></stop>
+                        <stop offset="1" stop-color="#6692F1"></stop>
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="m30 15-4 5-4-11-4 18-4-11-4 7-4-5"
+                      stroke="url(#:Rardm:)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </span>
+                <h3>Reporting</h3>
+                <h5>
+                  Stay on top of things with always up-to-date reporting
+                  features.
+                </h5>
+                <p>
+                  We talked about reporting in the section above but we needed
+                  three items here, so mentioning it one more time for
+                  posterity.
+                </p>
+              </div>
+              <div
+                class="c-secondary-features__section__tab__wrapper"
+                data-position="1"
+              >
+                <span>
+                  <svg aria-hidden="true" class="h-9 w-9" fill="none">
+                    <path
+                      opacity=".5"
+                      d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
+                      fill="#fff"
+                    ></path>
+                    <path
+                      opacity=".3"
+                      d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
+                      fill="#fff"
+                    ></path>
+                    <path
+                      d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
+                      fill="#fff"
+                    ></path>
+                  </svg>
+                </span>
+                <h3>Inventory</h3>
+                <h5>
+                  Never lose track of what’s in stock with accurate inventory
+                  tracking.
+                </h5>
+                <p>
+                  We don’t offer this as part of our software but that statement
+                  is inarguably true. Accurate inventory tracking would help you
+                  for sure.
+                </p>
+              </div>
+              <div
+                class="c-secondary-features__section__tab__wrapper"
+                data-position="2"
+              >
+                <span>
+                  <svg aria-hidden="true" class="h-9 w-9" fill="none">
+                    <path
+                      opacity=".5"
+                      d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z"
+                      fill="#fff"
+                    ></path>
+                    <path
+                      d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z"
+                      fill="#fff"
+                    ></path>
+                  </svg>
+                </span>
+                <h3>Contacts</h3>
+                <h5>
+                  Organize all of your contacts, service providers, and invoices
+                  in one place.
+                </h5>
+                <p>
+                  This also isn’t actually a feature, it’s just some friendly
+                  advice. We definitely recommend that you do this, you’ll feel
+                  really organized and professional.
+                </p>
+              </div>
+            </div>
+            <div
+              class="c-secondary-features__section__imgs__container w-full mt-24 overflow-hidden rounded-3xl inset-0 bg-slate-200 px-14 py-16 xl:px-16"
+            >
+              <div
+                class="c-secondary-features__section__imgs w-full grid grid-flow-col-dense justify-start items-center gap-x-12 translate-x-0"
+              >
+                <div class="c-active">
+                  <img src="assets/secondary features/profit-loss.webp" />
+                </div>
+                <div>
+                  <img src="assets/secondary features/inventory.webp" />
+                </div>
+                <div>
+                  <img src="assets/secondary features/contacts.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="get-started__section" class="bg-blue-600 py-16 md:py-32">
+        <img
+          src="assets/get-started/background-call-to-action.6a5a5672.jpg"
+          class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2 z-0"
+          width="2347"
+          height="1244"
+        />
+        <div class="c-flex-center flex-col gap-7 w-full relative mx-auto z-10">
+          <div class="c-section__header">
+            <h1 class="text-white">Get started today</h1>
+            <p class="text-slate-100">
+              Well everything you need if you aren’t that picky about minor
+              details like tax compliance.
+            </p>
+          </div>
+          <a
+            href="sign-up.html"
+            class="c-button bg-white hover:bg-blue-50 active:bg-blue-200 font-medium text-black"
+            >Get 6 months free</a
+          >
+        </div>
+      </section>
+      <section id="testmonials__section" class="bg-white">
+        <div class="w-fit mx-auto">
+          <div class="c-section__header">
+            <h1 class="text-slate-900">Loved by businesses worldwide.</h1>
+            <p class="text-slate-600">
+              Our software is so simple that people can’t help but fall in love
+              with it. Simplicity is easy when you just skip tons of
+              mission-critical features.
+            </p>
+          </div>
+          <div
+            class="w-full grid items-center justify-center gap-8 md:grid-cols-2"
+          >
+            <div class="c-testimonials__section__card__wrapper">
+              <svg aria-hidden="true" width="105" height="78">
+                <path
+                  d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"
+                ></path>
+              </svg>
+              <div class="c-testimonials__section__card__wrapper__main-content">
+                <div class="c-testimonials__section__card__blockquote">
+                  <p>
+                    TaxPal is so easy to use I can’t help but wonder if it’s
+                    really doing the things the government expects me to do.
+                  </p>
+                </div>
+                <div class="c-testimonials__section__card__info">
+                  <div>
+                    <h3>Sheryl Berge</h3>
+                    <p>CEO at Lynch LLC</p>
+                  </div>
+                  <div>
+                    <div class="c-testimonials__section__card__img">
+                      <img
+                        src="assets/testimonials/avatar-1.webp"
+                        class="object-fit"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-testimonials__section__card__wrapper">
+              <svg aria-hidden="true" width="105" height="78">
+                <path
+                  d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"
+                ></path>
+              </svg>
+              <div class="c-testimonials__section__card__wrapper__main-content">
+                <div class="c-testimonials__section__card__blockquote">
+                  <p>
+                    I’m trying to get a hold of someone in support, I’m in a lot
+                    of trouble right now and they are saying it has something to
+                    do with my books. Please get back to me right away.
+                  </p>
+                </div>
+                <div class="c-testimonials__section__card__info">
+                  <div>
+                    <h3>Amy Hahn</h3>
+                    <p>Director at Velocity Industries</p>
+                  </div>
+                  <div>
+                    <div class="c-testimonials__section__card__img">
+                      <img
+                        src="assets/testimonials/avatar-2.webp"
+                        class="object-fit"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-testimonials__section__card__wrapper">
+              <svg aria-hidden="true" width="105" height="78">
+                <path
+                  d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"
+                ></path>
+              </svg>
+              <div class="c-testimonials__section__card__wrapper__main-content">
+                <div class="c-testimonials__section__card__blockquote">
+                  <p>
+                    The best part about TaxPal is every time I pay my employees,
+                    my bank balance doesn’t go down like it used to. Looking
+                    forward to spending this extra cash when I figure out why my
+                    card is being declined.
+                  </p>
+                </div>
+                <div class="c-testimonials__section__card__info">
+                  <div>
+                    <h3>Leland Kiehn</h3>
+                    <p>Founder of Kiehn and Sons</p>
+                  </div>
+                  <div>
+                    <div class="c-testimonials__section__card__img">
+                      <img
+                        src="assets/testimonials/avatar-3.webp"
+                        class="object-fit"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-testimonials__section__card__wrapper">
+              <svg aria-hidden="true" width="105" height="78">
+                <path
+                  d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"
+                ></path>
+              </svg>
+              <div class="c-testimonials__section__card__wrapper__main-content">
+                <div class="c-testimonials__section__card__blockquote">
+                  <p>
+                    There are so many things I had to do with my old software
+                    that I just don’t do at all with TaxPal. Suspicious but I
+                    can’t say I don’t love it.
+                  </p>
+                </div>
+                <div class="c-testimonials__section__card__info">
+                  <div>
+                    <h3>Erin Powlowski</h3>
+                    <p>COO at Armstrong Inc</p>
+                  </div>
+                  <div>
+                    <div class="c-testimonials__section__card__img">
+                      <img
+                        src="assets/testimonials/avatar-4.webp"
+                        class="object-fit"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-testimonials__section__card__wrapper">
+              <svg aria-hidden="true" width="105" height="78">
+                <path
+                  d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"
+                ></path>
+              </svg>
+              <div class="c-testimonials__section__card__wrapper__main-content">
+                <div class="c-testimonials__section__card__blockquote">
+                  <p>
+                    I used to have to remit tax to the EU and with TaxPal I
+                    somehow don’t have to do that anymore. Nervous to travel
+                    there now though.
+                  </p>
+                </div>
+                <div class="c-testimonials__section__card__info">
+                  <div>
+                    <h3>Peter Renolds</h3>
+                    <p>Founder of West Inc</p>
+                  </div>
+                  <div>
+                    <div class="c-testimonials__section__card__img">
+                      <img
+                        src="assets/testimonials/avatar-5.webp"
+                        class="object-fit"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-testimonials__section__card__wrapper">
+              <svg aria-hidden="true" width="105" height="78">
+                <path
+                  d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"
+                ></path>
+              </svg>
+              <div class="c-testimonials__section__card__wrapper__main-content">
+                <div class="c-testimonials__section__card__blockquote">
+                  <p>
+                    This is the fourth email I’ve sent to your support team. I
+                    am literally being held in jail for tax fraud. Please answer
+                    your damn emails, this is important.
+                  </p>
+                </div>
+                <div class="c-testimonials__section__card__info">
+                  <div>
+                    <h3>Amy Hahn</h3>
+                    <p>Director at Velocity Industries</p>
+                  </div>
+                  <div>
+                    <div class="c-testimonials__section__card__img">
+                      <img
+                        src="assets/testimonials/avatar-2.webp"
+                        class="object-fit"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing__section" class="bg-slate-900">
+        <div class="w-fit mx-auto">
+          <div class="c-section__header">
+            <h1 class="text-white">Simple pricing, for everyone.</h1>
+            <p class="text-slate-100">
+              It doesn’t matter what size your business is, our software won’t
+              work well for you.
+            </p>
+          </div>
+          <div
+            class="w-full grid justify-items-center grid-cols-1 lg:grid-cols-3 grid-flow-row-dense gap-8"
+          >
+            <div class="c-pricing__section__price-card__wrapper">
+              <div
+                class="c-pricing__section__price-card__wrapper__main-content"
+              >
+                <h1>$9</h1>
+                <h3>Starter</h3>
+                <p>
+                  Good for anyone who is self-employed and just getting started.
+                </p>
+              </div>
+              <a
+                class="c-button text-white border border-slate-50/30"
+                href="sign-up.html"
+                >Get Started</a
+              >
+              <ul>
+                <li>
+                  <svg aria-hidden="true">
+                    <path
+                      d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+                      stroke-width="0"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8.25"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                  </svg>
+                  <span>Send 10 quotes and invoices</span>
+                </li>
+                <li>
+                  <svg aria-hidden="true">
+                    <path
+                      d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+                      stroke-width="0"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8.25"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                  </svg>
+                  <span>Connect up to 2 bank accounts</span>
+                </li>
+                <li>
+                  <svg aria-hidden="true">
+                    <path
+                      d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+                      stroke-width="0"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8.25"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                  </svg>
+                  <span>Track up to 15 expenses per month</span>
+                </li>
+                <li>
+                  <svg aria-hidden="true">
+                    <path
+                      d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+                      stroke-width="0"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8.25"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                  </svg>
+                  <span>Manual payroll support</span>
+                </li>
+                <li>
+                  <svg aria-hidden="true">
+                    <path
+                      d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+                      stroke-width="0"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8.25"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                  </svg>
+                  <span>Export up to 3 reports</span>
+                </li>
+              </ul>
+            </div>
+            <div class="c-pricing__section__price-card__wrapper bg-blue-600">
+              <div
+                class="c-pricing__section__price-card__wrapper__main-content"
+              >
+                <h1>$15</h1>
+                <h3>Small business</h3>
+                <p style="color: white">
+                  Perfect for small / medium sized businesses.
+                </p>
+              </div>
+              <a
+                class="c-button text-slate-800 bg-white font-medium"
+                href="sign-up.html"
+                >Get Started</a
+              >
+              <ul>
+                <li>
+                  <svg
+                    aria-hidden="true"
+                    class="h-6 w-6 flex-none fill-current stroke-current text-white"
+                  >
+                    <path
+                      d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+                      stroke-width="0"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8.25"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                  </svg>
+                  <span>Send 25 quotes and invoices</span>
+                </li>
+                <li>
+                  <svg
+                    aria-hidden="true"
+                    class="h-6 w-6 flex-none fill-current stroke-current text-white"
+                  >
+                    <path
+                      d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+                      stroke-width="0"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8.25"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                  </svg>
+                  <span>Connect up to 5 bank accounts</span>
+                </li>
+                <li>
+                  <svg
+                    aria-hidden="true"
+                    class="h-6 w-6 flex-none fill-current stroke-current text-white"
+                  >
+                    <path
+                      d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+                      stroke-width="0"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8.25"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                  </svg>
+                  <span>Track up to 50 expenses per month</span>
+                </li>
+                <li>
+                  <svg
+                    aria-hidden="true"
+                    class="h-6 w-6 flex-none fill-current stroke-current text-white"
+                  >
+                    <path
+                      d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+                      stroke-width="0"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8.25"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                  </svg>
+                  <span>Automated payroll support</span>
+                </li>
+                <li>
+                  <svg
+                    aria-hidden="true"
+                    class="h-6 w-6 flex-none fill-current stroke-current text-white"
+                  >
+                    <path
+                      d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+                      stroke-width="0"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8.25"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                  </svg>
+                  <span>Export up to 12 reports</span>
+                </li>
+                <li>
+                  <svg
+                    aria-hidden="true"
+                    class="h-6 w-6 flex-none fill-current stroke-current text-white"
+                  >
+                    <path
+                      d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+                      stroke-width="0"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8.25"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                  </svg>
+                  <span>Bulk reconcile transactions</span>
+                </li>
+                <li>
+                  <svg
+                    aria-hidden="true"
+                    class="h-6 w-6 flex-none fill-current stroke-current text-white"
+                  >
+                    <path
+                      d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+                      stroke-width="0"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8.25"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                  </svg>
+                  <span>Track in multiple currencies</span>
+                </li>
+              </ul>
+            </div>
+            <div class="c-pricing__section__price-card__wrapper">
+              <div
+                class="c-pricing__section__price-card__wrapper__main-content"
+              >
+                <h1>$39</h1>
+                <h3>Enterprise</h3>
+                <p>For even the biggest enterprise companies.</p>
+              </div>
+              <a
+                class="c-button text-white border border-slate-50/30"
+                href="sign-up.html"
+                >Get Started</a
+              >
+              <ul>
+                <li>
+                  <svg aria-hidden="true">
+                    <path
+                      d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+                      stroke-width="0"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8.25"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                  </svg>
+                  <span>Send unlimited quotes and invoices</span>
+                </li>
+                <li>
+                  <svg aria-hidden="true">
+                    <path
+                      d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+                      stroke-width="0"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8.25"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                  </svg>
+                  <span>Connect up to 15 bank accounts</span>
+                </li>
+                <li>
+                  <svg aria-hidden="true">
+                    <path
+                      d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+                      stroke-width="0"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8.25"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                  </svg>
+                  <span>Track up to 200 expenses per month</span>
+                </li>
+                <li>
+                  <svg aria-hidden="true">
+                    <path
+                      d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+                      stroke-width="0"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8.25"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                  </svg>
+                  <span>Automated payroll support</span>
+                </li>
+                <li>
+                  <svg aria-hidden="true">
+                    <path
+                      d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
+                      stroke-width="0"
+                    ></path>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8.25"
+                      fill="none"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                  </svg>
+                  <span>Export up to 25 reports, including TPS</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq__section" class="bg-slate-50">
+        <img
+          alt=""
+          src="assets/faq/background-faqs.55d2e36a.jpg"
+          decoding="async"
+          data-nimg="1"
+          class="absolute top-0 left-1/2 max-w-none translate-x-[-30%] -translate-y-1/4 z-0"
+          loading="lazy"
+          style="color: transparent"
+          width="1558"
+          height="946"
+        />
+        <div class="c-section__header relative z-10">
+          <h1 class="text-slate-900">Frequently asked questions</h1>
+          <p class="text-slate-600">
+            If you can’t find what you’re looking for, email our support team
+            and if you’re lucky someone will get back to you.
+          </p>
+        </div>
+        <div
+          class="c-faq__section__main-content grid grid-cols-1 grid-flow-row gap-10 w-full h-fit max-w-7xl mx-auto relative z-10 md:grid-cols-3 md:grid-rows-1"
+        >
+          <ul>
+            <li>
+              <h3>Does TaxPal handle VAT?</h3>
+              <p>
+                Well no, but if you move your company offshore you can probably
+                ignore it.
+              </p>
+            </li>
+            <li>
+              <h3>Can I pay for my subscription via purchase order?</h3>
+              <p>Absolutely, we are happy to take your money in all forms.</p>
+            </li>
+            <li>
+              <h3>How do I apply for a job at TaxPal?</h3>
+              <p>
+                We only hire our customers, so subscribe for a minimum of 6
+                months and then let’s talk.
+              </p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>What was that testimonial about tax fraud all about?</h3>
+              <p>
+                TaxPal is just a software application, ultimately your books are
+                your responsibility.
+              </p>
+            </li>
+            <li>
+              <h3>
+                TaxPal sounds horrible but why do I still feel compelled to
+                purchase?
+              </h3>
+              <p>
+                This is the power of excellent visual design. You just can’t
+                resist it, no matter how poorly it actually functions.
+              </p>
+            </li>
+            <li>
+              <h3>
+                I found other companies called TaxPal, are you sure you can use
+                this name?
+              </h3>
+              <p>
+                Honestly not sure at all. We haven’t actually incorporated or
+                anything, we just thought it sounded cool and made this website.
+              </p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h3>How do you generate reports?</h3>
+              <p>
+                You just tell us what data you need a report for, and we get our
+                kids to create beautiful charts for you using only the finest
+                crayons.
+              </p>
+            </li>
+            <li>
+              <h3>Can we expect more inventory features?</h3>
+              <p>In life it’s really better to never expect anything at all.</p>
+            </li>
+            <li>
+              <h3>I lost my password, how do I get into my account?</h3>
+              <p>
+                Send us an email and we will send you a copy of our latest
+                password spreadsheet so you can find your information.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer class="bg-slate-50 px-8 pb-10 pt-24 md:px-10">
+        <div class="c-flex-center flex-col gap-24 w-full md:gap-32">
+          <div class="c-flex-items-center flex-col gap-10 w-fit">
+            <span>
+              <svg
+                width="109"
+                height="40"
+                viewBox="0 0 109 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 20C0 31.046 8.954 40 20 40C31.046 40 40 31.046 40 20C40 8.954 31.046 0 20 0C8.954 0 0 8.954 0 20ZM20 36C12.736 36 6.679 30.837 5.296 23.98C4.97 22.358 6.343 21 8 21H32C33.657 21 35.031 22.357 34.704 23.98C33.32 30.838 27.264 36 20 36Z"
+                  fill="#2563EB"
+                />
+                <path
+                  d="M55.528 26.5697V15.8417H52V13.9697H61.108V15.8417H57.472V26.5697H55.528Z"
+                  fill="#0F172A"
+                />
+                <path
+                  d="M83.084 26.57V13.97H88.43C89.174 13.97 89.846 14.15 90.446 14.51C91.0489 14.8489 91.547 15.3471 91.886 15.95C92.246 16.562 92.426 17.252 92.426 18.02C92.426 18.8 92.246 19.502 91.886 20.126C91.5458 20.742 91.049 21.2573 90.446 21.62C89.846 21.98 89.174 22.16 88.43 22.16H85.784V26.57H83.084V26.57ZM85.748 19.73H88.124C88.412 19.73 88.67 19.658 88.898 19.514C89.126 19.358 89.306 19.154 89.438 18.902C89.585 18.6381 89.6596 18.34 89.654 18.038C89.654 17.714 89.582 17.432 89.438 17.192C89.3173 16.952 89.1297 16.7519 88.898 16.616C88.6662 16.4709 88.3974 16.3959 88.124 16.4H85.748V19.73V19.73ZM106.227 26.57V13.25H108.783V26.57H106.227Z"
+                  fill="#2563EB"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M95.9059 26.1019C96.5419 26.5339 97.2559 26.7499 98.0479 26.7499C98.4919 26.7499 98.9119 26.6839 99.3079 26.5519C99.6865 26.4171 100.044 26.2292 100.37 25.9939C100.632 25.8023 100.868 25.5778 101.072 25.3259V26.5699H103.646V17.0479H101.108V18.2959C100.922 18.0444 100.704 17.8185 100.46 17.6239C100.156 17.3752 99.8079 17.1859 99.4339 17.0659C99.0244 16.9175 98.5915 16.8443 98.1559 16.8499C97.3279 16.8499 96.5899 17.0659 95.9419 17.4979C95.2939 17.9179 94.7779 18.4999 94.3939 19.2439C94.0219 19.9759 93.8359 20.8219 93.8359 21.7819C93.8359 22.7419 94.0219 23.5939 94.3939 24.3379C94.7659 25.0819 95.2699 25.6699 95.9059 26.1019ZM100.01 24.1939C99.6499 24.4219 99.2299 24.5359 98.7499 24.5359C98.2819 24.5359 97.8679 24.4219 97.5079 24.1939C97.1513 23.956 96.8653 23.6265 96.6799 23.2399C96.4759 22.8199 96.3739 22.3339 96.3739 21.7819C96.3739 21.2419 96.4759 20.7679 96.6799 20.3599C96.8839 19.9519 97.1599 19.6339 97.5079 19.4059C97.8679 19.1659 98.2819 19.0459 98.7499 19.0459C99.2299 19.0459 99.6499 19.1659 100.01 19.4059C100.37 19.6339 100.646 19.9519 100.838 20.3599C101.042 20.7679 101.144 21.2419 101.144 21.7819C101.144 22.3339 101.042 22.8199 100.838 23.2399C100.66 23.6314 100.373 23.9629 100.01 24.1939V24.1939Z"
+                  fill="#2563EB"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M76.3221 23.1971L78.9171 26.5701H81.1851L77.5231 21.7831L80.8611 17.1201H78.6651L76.5031 20.4541L73.9491 17.1201H71.6091L75.2611 21.8301L71.6271 26.5701H73.8231L76.3231 23.1971H76.3221ZM62.7381 26.1021C63.3703 26.5294 64.117 26.7553 64.8801 26.7501C65.3361 26.7501 65.7681 26.6781 66.1761 26.5341C66.5961 26.3901 66.9741 26.1981 67.3101 25.9581C67.6451 25.733 67.9376 25.4503 68.1741 25.1231V26.5701H70.0461V17.1201H68.1741V18.5701C67.9842 18.2566 67.7404 17.979 67.4541 17.7501C67.1428 17.4796 66.7822 17.2718 66.3921 17.1381C65.9577 16.9898 65.5011 16.9168 65.0421 16.9221C64.2141 16.9221 63.4641 17.1321 62.7921 17.5521C62.1321 17.9721 61.6041 18.5541 61.2081 19.2981C60.8241 20.0301 60.6321 20.8701 60.6321 21.8181C60.6321 22.7541 60.8241 23.5941 61.2081 24.3381C61.5921 25.0821 62.1021 25.6701 62.7381 26.1021V26.1021ZM66.8601 24.6261C66.4281 24.9021 65.9301 25.0401 65.3661 25.0401C64.8443 25.0487 64.3313 24.9048 63.8901 24.6261C63.4621 24.3412 63.1149 23.9506 62.8821 23.4921C62.6421 23.0001 62.5221 22.4421 62.5221 21.8181C62.5221 21.2061 62.6421 20.6601 62.8821 20.1801C63.1341 19.7001 63.4701 19.3221 63.8901 19.0461C64.3313 18.7675 64.8443 18.6236 65.3661 18.6321C65.9301 18.6321 66.4281 18.7701 66.8601 19.0461C67.2921 19.3221 67.6281 19.7001 67.8681 20.1801C68.1201 20.6601 68.2461 21.2061 68.2461 21.8181C68.2461 22.4421 68.1201 23.0001 67.8681 23.4921C67.6281 23.9721 67.2921 24.3501 66.8601 24.6261V24.6261Z"
+                  fill="#0F172A"
+                />
+              </svg>
+            </span>
+            <div class="hidden md:block">
+              <ul class="c-flex-items-center list-none gap-x-8 lg:gap-x-10">
+                <li>
+                  <a class="c-button--hover" href="#primary-features__section"
+                    >Features</a
+                  >
+                </li>
+                <li>
+                  <a class="c-button--hover" href="#testmonials__section"
+                    >Testimonials</a
+                  >
+                </li>
+                <li>
+                  <a class="c-button--hover" href="#pricing__section"
+                    >Pricing</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="c-flex-items-center justify-center gap-8 flex-wrap w-full md:justify-between"
+          >
+            <p class="text-sm text-slate-500 md:text-base">
+              Copyright © 2022 TaxPal. All rights reserved.
+            </p>
+            <div class="c-flex-center gap-8">
+              <a class="group" href="https://twitter.com" target="_blank"
+                ><svg
+                  aria-hidden="true"
+                  class="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
+                >
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0 0 22 5.92a8.19 8.19 0 0 1-2.357.646 4.118 4.118 0 0 0 1.804-2.27 8.224 8.224 0 0 1-2.605.996 4.107 4.107 0 0 0-6.993 3.743 11.65 11.65 0 0 1-8.457-4.287 4.106 4.106 0 0 0 1.27 5.477A4.073 4.073 0 0 1 2.8 9.713v.052a4.105 4.105 0 0 0 3.292 4.022 4.093 4.093 0 0 1-1.853.07 4.108 4.108 0 0 0 3.834 2.85A8.233 8.233 0 0 1 2 18.407a11.615 11.615 0 0 0 6.29 1.84"
+                  />
+                </svg>
+              </a>
+              <a
+                class="group"
+                href="https://github.com/islamelsayyad"
+                target="_blank"
+                ><svg
+                  aria-hidden="true"
+                  class="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
+                >
+                  <path
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
