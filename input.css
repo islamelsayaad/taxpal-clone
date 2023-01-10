@@ -165,7 +165,7 @@ section {
 }
 
 .c-testimonials__section__card__wrapper {
-  @apply h-full w-full max-w-[30rem] relative  rounded-2xl bg-white px-6 pt-10 pb-6 border ring-1 ring-slate-50;
+  @apply h-full w-full max-w-[30rem] relative rounded-2xl bg-white px-6 pt-10 pb-6 border ring-1 ring-slate-50;
 }
 
 .c-testimonials__section__card__wrapper svg {
@@ -173,7 +173,7 @@ section {
 }
 
 .c-testimonials__section__card__wrapper__main-content {
-  @apply relative w-full h-full flex flex-col items-center justify-between gap-14 z-10;
+  @apply relative w-full h-full flex flex-col items-center justify-between gap-16 z-10;
 }
 
 .c-testimonials__section__card__blockquote {
