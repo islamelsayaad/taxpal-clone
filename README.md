@@ -21,10 +21,9 @@ cd taxpal-tailwindcss
 2- Install npm dependencies
 ```
 npm install -g tailwindcss
-npm install -g live-server
 ```
 3- Run app locally
 ```
+npm run build
 npm run watch
-live-server
 ```
