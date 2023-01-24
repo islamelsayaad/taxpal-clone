@@ -10,6 +10,7 @@
 
 + Tailwindcss
 + Vanilla JavaScript
++ HTML5
 
 ## Development
 
