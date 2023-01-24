@@ -4,7 +4,7 @@
 
 ## Overview
 
-[TaxPal Tailwindcss](https://islamelsayyad.github.io/taxpal-tailwindcss/) Landing Page built with [Tailwindcss](https://tailwindcss.com/)
+[TaxPal Tailwindcss](https://islamelsayyad.github.io/taxpal-landing-page/) Landing Page built with [Tailwindcss](https://tailwindcss.com/)
 
 ## Built with
 
