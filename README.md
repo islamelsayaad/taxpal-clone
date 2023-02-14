@@ -1,10 +1,8 @@
 # TaxPal Tailwindcss
 
-![mockup](https://user-images.githubusercontent.com/81169249/214079604-f38ac765-8353-4e92-99d9-c06ae7d10dca.png)
-
 ## Overview
 
-[TaxPal](https://islamelsayyad.github.io/taxpal-landing-page/) Landing Page built with [Tailwindcss](https://tailwindcss.com/)
+[TaxPal](https://islamelsayyad.github.io/taxpal-tailwind-landing-page/) Landing Page built with [Tailwindcss](https://tailwindcss.com/)
 
 ## Built with
 
