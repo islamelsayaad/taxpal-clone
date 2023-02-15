@@ -7,7 +7,7 @@ landing page built with Tailwindcss [[Live Preview]](https://islamelsayyad.githu
 ## Built with
 
 + Tailwindcss
-+ Vanilla JavaScript
++ JavaScript
 + HTML5
 
 ## Development
