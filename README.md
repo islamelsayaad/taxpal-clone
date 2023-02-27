@@ -22,6 +22,5 @@ npm install -g tailwindcss
 ```
 3- Run app locally
 ```
-npm run build
 npm run watch
 ```
