@@ -2,19 +2,18 @@
 
 ## Overview
 
-landing page built with Tailwindcss [[Live Preview]](https://islamelsayyad.github.io/taxpal-tailwind-landing-page/) 
+TaxPal Landing page
 
 ## Built with
 
 + Tailwindcss
 + JavaScript
-+ HTML5
 
 ## Development
 
 1- Clone the repository and change directory.
 ```
-git clone https://github.com/islamelsayyad/taxpal-tailwindcss.git
+git clone https://github.com/mujahedjs/taxpal-tailwindcss.git
 cd taxpal-tailwindcss
 ```
 2- Install npm dependencies
