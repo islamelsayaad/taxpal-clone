@@ -60,10 +60,10 @@ const featuresPrimaryData = {
     `Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it`,
   ],
   img: [
-    `assets/primary features/payroll.webp`,
-    `assets/primary features/expenses.webp`,
-    `assets/primary features/vat-returns.webp`,
-    `assets/primary features/reporting.webp`,
+    `../assets/primary features/payroll.webp`,
+    `../assets/primary features/expenses.webp`,
+    `../assets/primary features/vat-returns.webp`,
+    `../assets/primary features/reporting.webp`,
   ],
 };
 
