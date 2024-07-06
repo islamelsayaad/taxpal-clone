@@ -1,4 +1,4 @@
-# TaxPal Tailwindcss
+# TaxPal
 
 ## Overview
 
