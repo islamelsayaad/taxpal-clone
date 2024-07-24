@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="h-full bg-white scroll-smooth antialiased" lang="en">
+<html class="h-full antialiased bg-white scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,7 +17,7 @@
   </head>
   <body class="overflow-x-hidden">
     <nav class="py-8 px-7 md:px-10">
-      <div class="c-flex-items-center justify-between w-full">
+      <div class="justify-between w-full c-flex-items-center">
         <div class="c-flex-items-center gap-x-14 lg:gap-x-16">
           <a href="#">
             <svg
@@ -56,7 +56,7 @@
             </svg>
           </a>
           <div class="hidden md:block">
-            <ul class="c-flex-items-center list-none gap-x-8 lg:gap-x-10">
+            <ul class="list-none c-flex-items-center gap-x-8 lg:gap-x-10">
               <li>
                 <a class="c-button--hover" href="#primary-features__section"
                   >Features</a
@@ -73,13 +73,13 @@
             </ul>
           </div>
         </div>
-        <div class="c-flex-items-center justify-between gap-x-8 lg:gap-x-10">
-          <a href="login.html" class="c-button--hover hidden sm:block"
+        <div class="justify-between c-flex-items-center gap-x-8 lg:gap-x-10">
+          <a href="login.html" class="hidden c-button--hover sm:block"
             >Sign in</a
           >
           <a
             href="sign-up.html"
-            class="c-button font-medium text-slate-50 bg-blue-600 hover:bg-blue-500 active:bg-blue-800"
+            class="font-medium bg-blue-600 c-button text-slate-50 hover:bg-blue-500 active:bg-blue-800"
           >
             Get started
           </a>
@@ -116,11 +116,11 @@
       <div class="c-flex-center flex-nowrap gap-y-5 gap-x-4 sm:gap-x-8">
         <a
           href="sign-up.html"
-          class="c-button bg-slate-900 text-white font-medium"
+          class="font-medium text-white c-button bg-slate-900"
           >Get 6 months free</a
         >
         <a
-          class="c-button border border-slate-300 hover:border-slate-400 active:bg-slate-50 gap-x-3 text-black"
+          class="text-black border c-button border-slate-300 hover:border-slate-400 active:bg-slate-50 gap-x-3"
           href="https://www.youtube.com/watch?v=JRn8Xc41nUI"
           target="_blank"
         >
@@ -144,33 +144,33 @@
         >
       </div>
       <div class="w-full mt-28 md:mt-32">
-        <div class="c-flex-center flex-col gap-14">
+        <div class="flex-col c-flex-center gap-14">
           <h3
-            class="text-xl font-display font-medium leading-none text-slate-700 text-center tracking-tight md:text-2xl"
+            class="text-xl font-medium leading-none tracking-tight text-center font-display text-slate-700 md:text-2xl"
           >
             Trusted by
           </h3>
           <div class="w-full">
             <ul
-              class="grid grid-cols-2 grid-flow-row justify-items-center gap-10 w-full h-fit list-none flex-wrap sm:flex sm:items-center sm:justify-center lg:gap-x-16"
+              class="grid flex-wrap w-full grid-flow-row grid-cols-2 gap-10 list-none justify-items-center h-fit sm:flex sm:items-center sm:justify-center lg:gap-x-16"
             >
               <li>
-                <img src="assets/header/1.svg" alt="" />
+                <img src="public/header/1.svg" alt="" />
               </li>
               <li>
-                <img src="assets/header/2.svg" alt="" />
+                <img src="public/header/2.svg" alt="" />
               </li>
               <li>
-                <img src="assets/header/3.svg" alt="" />
+                <img src="public/header/3.svg" alt="" />
               </li>
               <li>
-                <img src="assets/header/4.svg" alt="" />
+                <img src="public/header/4.svg" alt="" />
               </li>
               <li>
-                <img src="assets/header/5.svg" alt="" />
+                <img src="public/header/5.svg" alt="" />
               </li>
               <li>
-                <img src="assets/header/6.svg" alt="" />
+                <img src="public/header/6.svg" alt="" />
               </li>
             </ul>
           </div>
@@ -180,13 +180,13 @@
     <main>
       <section id="primary-features__section" class="bg-blue-600">
         <img
-          src="assets/primary features/background-features.5f7a9ac9.jpg"
+          src="public/primary features/background-features.5f7a9ac9.jpg"
           class="absolute top-1/2 left-1/2 max-w-none translate-x-[-44%] translate-y-[-42%] z-0"
           width="2245"
           height="1636"
         />
         <div
-          class="c-flex-center flex-col w-full max-w-7xl mx-auto relative z-10"
+          class="relative z-10 flex-col w-full mx-auto c-flex-center max-w-7xl"
         >
           <div class="c-section__header">
             <h1 class="text-white">Everything you need to run your books.</h1>
@@ -196,7 +196,7 @@
             </p>
           </div>
           <div
-            class="c-flex-justify-center flex-col w-screen sm:w-full lg:grid lg:grid-cols-12"
+            class="flex-col w-screen c-flex-justify-center sm:w-full lg:grid lg:grid-cols-12"
           >
             <div class="relative w-full lg:col-span-5">
               <div
@@ -245,15 +245,15 @@
                 </div>
               </div>
               <div
-                class="c-primary-features__section__list-items w-full relative px-8 pb-14 pt-4 z-10 sm:pt-12 sm:px-6 lg:hidden"
+                class="relative z-10 w-full px-8 pt-4 c-primary-features__section__list-items pb-14 sm:pt-12 sm:px-6 lg:hidden"
               >
                 <div
                   class="absolute z-[1] left-0 top-0 w-screen h-[64rem] bg-white/10 ring-1 ring-inset ring-white/10 inset-x-0 rounded-t-xl sm:left-0 sm:w-full sm:top-[0.75rem] sm:h-full"
                 ></div>
 
-                <div class="c-flex-center flex-col gap-y-10 relative z-10">
+                <div class="relative z-10 flex-col c-flex-center gap-y-10">
                   <ul
-                    class="c-flex-items-center justify-start flex-nowrap gap-x-4 w-full py-4 overflow-x-auto sm:justify-center sm:py-0"
+                    class="justify-start w-full py-4 overflow-x-auto c-flex-items-center flex-nowrap gap-x-4 sm:justify-center sm:py-0"
                   >
                     <li class="c-active" data-index="0">Payroll</li>
                     <li data-index="1">Claim expenses</li>
@@ -274,7 +274,7 @@
             <div
               class="c-primary-features__section__img__wrapper relative left-14 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 -mt-[1rem] sm:w-fit sm:left-0 md:mt-0 lg:col-span-7 lg:w-[67.8125rem]"
             >
-              <img src="assets/primary features/payroll.webp" />
+              <img src="public/primary features/payroll.webp" />
             </div>
           </div>
         </div>
@@ -287,10 +287,10 @@
             complicate your everyday business tasks instead.
           </p>
         </div>
-        <div class="c-flex-items-center flex-col w-full">
+        <div class="flex-col w-full c-flex-items-center">
           <div class="w-full xl:max-w-7xl">
             <div
-              class="c-secondary-features__section__tabs grid items-baseline justify-center grid-flow-row gap-x-14 gap-y-16 lg:grid-rows-1 lg:grid-cols-3"
+              class="grid items-baseline justify-center grid-flow-row c-secondary-features__section__tabs gap-x-14 gap-y-16 lg:grid-rows-1 lg:grid-cols-3"
             >
               <div
                 class="c-secondary-features__section__tab__wrapper c-active"
@@ -394,33 +394,33 @@
               </div>
             </div>
             <div
-              class="c-secondary-features__section__imgs__container w-full mt-24 overflow-hidden rounded-3xl inset-0 bg-slate-200 px-14 py-16 xl:px-16"
+              class="inset-0 w-full py-16 mt-24 overflow-hidden c-secondary-features__section__imgs__container rounded-3xl bg-slate-200 px-14 xl:px-16"
             >
               <div
-                class="c-secondary-features__section__imgs w-full grid grid-flow-col-dense justify-start items-center gap-x-12 translate-x-0"
+                class="grid items-center justify-start w-full grid-flow-col-dense translate-x-0 c-secondary-features__section__imgs gap-x-12"
               >
                 <div class="c-active">
-                  <img src="assets/secondary features/profit-loss.webp" />
+                  <img src="public/secondary features/profit-loss.webp" />
                 </div>
                 <div>
-                  <img src="assets/secondary features/inventory.webp" />
+                  <img src="public/secondary features/inventory.webp" />
                 </div>
                 <div>
-                  <img src="assets/secondary features/contacts.webp" />
+                  <img src="public/secondary features/contacts.webp" />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="get-started__section" class="bg-blue-600 py-16 md:py-32">
+      <section id="get-started__section" class="py-16 bg-blue-600 md:py-32">
         <img
-          src="assets/get-started/background-call-to-action.6a5a5672.jpg"
-          class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2 z-0"
+          src="public/get-started/background-call-to-action.6a5a5672.jpg"
+          class="absolute z-0 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 max-w-none"
           width="2347"
           height="1244"
         />
-        <div class="c-flex-center flex-col gap-7 w-full relative mx-auto z-10">
+        <div class="relative z-10 flex-col w-full mx-auto c-flex-center gap-7">
           <div class="c-section__header">
             <h1 class="text-white">Get started today</h1>
             <p class="text-slate-100">
@@ -430,13 +430,13 @@
           </div>
           <a
             href="sign-up.html"
-            class="c-button bg-white hover:bg-blue-50 active:bg-blue-200 font-medium text-black"
+            class="font-medium text-black bg-white c-button hover:bg-blue-50 active:bg-blue-200"
             >Get 6 months free</a
           >
         </div>
       </section>
       <section id="testmonials__section" class="bg-white">
-        <div class="w-fit mx-auto">
+        <div class="mx-auto w-fit">
           <div class="c-section__header">
             <h1 class="text-slate-900">Loved by businesses worldwide.</h1>
             <p class="text-slate-600">
@@ -446,7 +446,7 @@
             </p>
           </div>
           <div
-            class="w-full grid items-center justify-center gap-8 md:grid-cols-2"
+            class="grid items-center justify-center w-full gap-8 md:grid-cols-2"
           >
             <div class="c-testimonials__section__card__wrapper">
               <svg aria-hidden="true" width="105" height="78">
@@ -469,7 +469,7 @@
                   <div>
                     <div class="c-testimonials__section__card__img">
                       <img
-                        src="assets/testimonials/avatar-1.webp"
+                        src="public/testimonials/avatar-1.webp"
                         class="object-fit"
                       />
                     </div>
@@ -499,7 +499,7 @@
                   <div>
                     <div class="c-testimonials__section__card__img">
                       <img
-                        src="assets/testimonials/avatar-2.webp"
+                        src="public/testimonials/avatar-2.webp"
                         class="object-fit"
                       />
                     </div>
@@ -530,7 +530,7 @@
                   <div>
                     <div class="c-testimonials__section__card__img">
                       <img
-                        src="assets/testimonials/avatar-3.webp"
+                        src="public/testimonials/avatar-3.webp"
                         class="object-fit"
                       />
                     </div>
@@ -560,7 +560,7 @@
                   <div>
                     <div class="c-testimonials__section__card__img">
                       <img
-                        src="assets/testimonials/avatar-4.webp"
+                        src="public/testimonials/avatar-4.webp"
                         class="object-fit"
                       />
                     </div>
@@ -590,7 +590,7 @@
                   <div>
                     <div class="c-testimonials__section__card__img">
                       <img
-                        src="assets/testimonials/avatar-5.webp"
+                        src="public/testimonials/avatar-5.webp"
                         class="object-fit"
                       />
                     </div>
@@ -620,7 +620,7 @@
                   <div>
                     <div class="c-testimonials__section__card__img">
                       <img
-                        src="assets/testimonials/avatar-2.webp"
+                        src="public/testimonials/avatar-2.webp"
                         class="object-fit"
                       />
                     </div>
@@ -632,7 +632,7 @@
         </div>
       </section>
       <section id="pricing__section" class="bg-slate-900">
-        <div class="w-fit mx-auto">
+        <div class="mx-auto w-fit">
           <div class="c-section__header">
             <h1 class="text-white">Simple pricing, for everyone.</h1>
             <p class="text-slate-100">
@@ -641,7 +641,7 @@
             </p>
           </div>
           <div
-            class="w-full grid justify-items-center grid-cols-1 lg:grid-cols-3 grid-flow-row-dense gap-8"
+            class="grid w-full grid-flow-row-dense grid-cols-1 gap-8 justify-items-center lg:grid-cols-3"
           >
             <div class="c-pricing__section__price-card__wrapper">
               <div
@@ -654,7 +654,7 @@
                 </p>
               </div>
               <a
-                class="c-button text-white border border-slate-50/30"
+                class="text-white border c-button border-slate-50/30"
                 href="sign-up.html"
                 >Get Started</a
               >
@@ -751,7 +751,7 @@
                 </li>
               </ul>
             </div>
-            <div class="c-pricing__section__price-card__wrapper bg-blue-600">
+            <div class="bg-blue-600 c-pricing__section__price-card__wrapper">
               <div
                 class="c-pricing__section__price-card__wrapper__main-content"
               >
@@ -762,7 +762,7 @@
                 </p>
               </div>
               <a
-                class="c-button text-slate-800 bg-white font-medium"
+                class="font-medium bg-white c-button text-slate-800"
                 href="sign-up.html"
                 >Get Started</a
               >
@@ -770,7 +770,7 @@
                 <li>
                   <svg
                     aria-hidden="true"
-                    class="h-6 w-6 flex-none fill-current stroke-current text-white"
+                    class="flex-none w-6 h-6 text-white fill-current stroke-current"
                   >
                     <path
                       d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
@@ -791,7 +791,7 @@
                 <li>
                   <svg
                     aria-hidden="true"
-                    class="h-6 w-6 flex-none fill-current stroke-current text-white"
+                    class="flex-none w-6 h-6 text-white fill-current stroke-current"
                   >
                     <path
                       d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
@@ -812,7 +812,7 @@
                 <li>
                   <svg
                     aria-hidden="true"
-                    class="h-6 w-6 flex-none fill-current stroke-current text-white"
+                    class="flex-none w-6 h-6 text-white fill-current stroke-current"
                   >
                     <path
                       d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
@@ -833,7 +833,7 @@
                 <li>
                   <svg
                     aria-hidden="true"
-                    class="h-6 w-6 flex-none fill-current stroke-current text-white"
+                    class="flex-none w-6 h-6 text-white fill-current stroke-current"
                   >
                     <path
                       d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
@@ -854,7 +854,7 @@
                 <li>
                   <svg
                     aria-hidden="true"
-                    class="h-6 w-6 flex-none fill-current stroke-current text-white"
+                    class="flex-none w-6 h-6 text-white fill-current stroke-current"
                   >
                     <path
                       d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
@@ -875,7 +875,7 @@
                 <li>
                   <svg
                     aria-hidden="true"
-                    class="h-6 w-6 flex-none fill-current stroke-current text-white"
+                    class="flex-none w-6 h-6 text-white fill-current stroke-current"
                   >
                     <path
                       d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
@@ -896,7 +896,7 @@
                 <li>
                   <svg
                     aria-hidden="true"
-                    class="h-6 w-6 flex-none fill-current stroke-current text-white"
+                    class="flex-none w-6 h-6 text-white fill-current stroke-current"
                   >
                     <path
                       d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
@@ -925,7 +925,7 @@
                 <p>For even the biggest enterprise companies.</p>
               </div>
               <a
-                class="c-button text-white border border-slate-50/30"
+                class="text-white border c-button border-slate-50/30"
                 href="sign-up.html"
                 >Get Started</a
               >
@@ -1028,7 +1028,7 @@
       <section id="faq__section" class="bg-slate-50">
         <img
           alt=""
-          src="assets/faq/background-faqs.55d2e36a.jpg"
+          src="public/faq/background-faqs.55d2e36a.jpg"
           decoding="async"
           data-nimg="1"
           class="absolute top-0 left-1/2 max-w-none translate-x-[-30%] -translate-y-1/4 z-0"
@@ -1037,7 +1037,7 @@
           width="1558"
           height="946"
         />
-        <div class="c-section__header relative z-10">
+        <div class="relative z-10 c-section__header">
           <h1 class="text-slate-900">Frequently asked questions</h1>
           <p class="text-slate-600">
             If you can’t find what you’re looking for, email our support team
@@ -1045,7 +1045,7 @@
           </p>
         </div>
         <div
-          class="c-faq__section__main-content grid grid-cols-1 grid-flow-row gap-10 w-full h-fit max-w-7xl mx-auto relative z-10 md:grid-cols-3 md:grid-rows-1"
+          class="relative z-10 grid w-full grid-flow-row grid-cols-1 gap-10 mx-auto c-faq__section__main-content h-fit max-w-7xl md:grid-cols-3 md:grid-rows-1"
         >
           <ul>
             <li>
@@ -1119,9 +1119,9 @@
           </ul>
         </div>
       </section>
-      <footer class="bg-slate-50 px-8 pb-10 pt-24 md:px-10">
-        <div class="c-flex-center flex-col gap-24 w-full md:gap-32">
-          <div class="c-flex-items-center flex-col gap-10 w-fit">
+      <footer class="px-8 pt-24 pb-10 bg-slate-50 md:px-10">
+        <div class="flex-col w-full gap-24 c-flex-center md:gap-32">
+          <div class="flex-col gap-10 c-flex-items-center w-fit">
             <span>
               <svg
                 width="109"
@@ -1159,7 +1159,7 @@
               </svg>
             </span>
             <div class="hidden md:block">
-              <ul class="c-flex-items-center list-none gap-x-8 lg:gap-x-10">
+              <ul class="list-none c-flex-items-center gap-x-8 lg:gap-x-10">
                 <li>
                   <a class="c-button--hover" href="#primary-features__section"
                     >Features</a
@@ -1179,16 +1179,16 @@
             </div>
           </div>
           <div
-            class="c-flex-items-center justify-center gap-8 flex-wrap w-full md:justify-between"
+            class="flex-wrap justify-center w-full gap-8 c-flex-items-center md:justify-between"
           >
             <p class="text-sm text-slate-500 md:text-base">
               Copyright © 2022 TaxPal. All rights reserved.
             </p>
-            <div class="c-flex-center gap-8">
+            <div class="gap-8 c-flex-center">
               <a class="group" href="https://twitter.com" target="_blank"
                 ><svg
                   aria-hidden="true"
-                  class="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
+                  class="w-6 h-6 fill-slate-500 group-hover:fill-slate-700"
                 >
                   <path
                     d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0 0 22 5.92a8.19 8.19 0 0 1-2.357.646 4.118 4.118 0 0 0 1.804-2.27 8.224 8.224 0 0 1-2.605.996 4.107 4.107 0 0 0-6.993 3.743 11.65 11.65 0 0 1-8.457-4.287 4.106 4.106 0 0 0 1.27 5.477A4.073 4.073 0 0 1 2.8 9.713v.052a4.105 4.105 0 0 0 3.292 4.022 4.093 4.093 0 0 1-1.853.07 4.108 4.108 0 0 0 3.834 2.85A8.233 8.233 0 0 1 2 18.407a11.615 11.615 0 0 0 6.29 1.84"
@@ -1201,7 +1201,7 @@
                 target="_blank"
                 ><svg
                   aria-hidden="true"
-                  class="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
+                  class="w-6 h-6 fill-slate-500 group-hover:fill-slate-700"
                 >
                   <path
                     d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"
